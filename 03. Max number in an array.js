@@ -1,15 +1,16 @@
-function maxNumber(arr){
-    let max = arr[0]
+function largestNumber(arr){
+    let largest = arr[0]
 
-    for (let i = 0; i < arr.length; i++){
-        if (arr[i] > max){
-            max = arr[i]
+    for (let num of arr){
+        if (num > largest){
+            largest = num
         }
     }
-    return max
-}
 
-console.log(maxNumber([1,4,5,7,3,4]))
+    return largest
+    
+}
+console.log(largestNumber([1,4,5,7,3,4]))
 
 // inbuilt version
 
