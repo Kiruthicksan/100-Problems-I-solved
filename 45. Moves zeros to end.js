@@ -16,4 +16,4 @@ function MoveZerosToEnd(arr) {
   return arr;
 }
 
-console.log(MoveZerosToEnd([0, 5, 0, 1, 2]));
+
