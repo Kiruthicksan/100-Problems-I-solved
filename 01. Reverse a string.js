@@ -10,21 +10,14 @@ console.log(res)
 // without builtin methods
 
 
-function reversedSting(str){
-    if (typeof str !== 'string'){
-        throw new console.error("Input must be String");
-        
-    }
-
-
+function reverseAString(str){
     let reversed = ""
 
-    for (let i = str.length; i >=0; i--){
+    for (let i = str.length - 1; i >= 0; i--){
         reversed += str[i]
     }
+
     return reversed
 }
 
-let res1 = reverseSting("Hello")
-
-console.log(res1)
+console.log(reverseAString("JavaScript"))
